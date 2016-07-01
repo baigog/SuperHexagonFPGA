@@ -1,5 +1,9 @@
 Analysis & Elaboration report for SuperHexagon
+<<<<<<< HEAD
 Fri Jul 01 13:59:57 2016
+=======
+Fri Jul 01 14:04:55 2016
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -38,10 +42,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Elaboration Status      ; Successful - Fri Jul 01 13:59:57 2016       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; SuperHexagon                                ;
 ; Top-level Entity Name              ; CIRCULO                                     ;
+=======
+; Analysis & Elaboration Status      ; Successful - Fri Jul 01 14:04:55 2016       ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; SuperHexagon                                ;
+; Top-level Entity Name              ; Juego_Fsm                                   ;
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -61,7 +72,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
+<<<<<<< HEAD
 ; Number detected on machine ; 8      ;
+=======
+; Number detected on machine ; 4      ;
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -71,7 +86,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
+<<<<<<< HEAD
 ; Top-level entity name                                                      ; CIRCULO            ; SuperHexagon       ;
+=======
+; Top-level entity name                                                      ; JUEGO_FSM          ; SuperHexagon       ;
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,6 +177,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Jul 01 13:59:42 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SuperHexagon -c SuperHexagon --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -222,11 +242,88 @@ Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
     Info: Processing ended: Fri Jul 01 13:59:57 2016
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:37
+=======
+    Info: Processing started: Fri Jul 01 14:04:39 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SuperHexagon -c SuperHexagon --analysis_and_elaboration
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file dec_hex_7seg.vhd
+    Info (12022): Found design unit 1: DEC_HEX_7SEG-DECOD File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/DEC_HEX_7SEG.vhd Line: 13
+    Info (12023): Found entity 1: DEC_HEX_7SEG File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/DEC_HEX_7SEG.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file vga_driver.v
+    Info (12023): Found entity 1: vga_driver File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/vga_driver.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file superhexagon.bdf
+    Info (12023): Found entity 1: SuperHexagon
+Info (12021): Found 1 design units, including 1 entities, in source file circle.v
+    Info (12023): Found entity 1: circle File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/circle.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rect_to_hex.v
+    Info (12023): Found entity 1: rect_to_hex File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/rect_to_hex.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file hex_to_colour.v
+    Info (12023): Found entity 1: hex_to_colour File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/hex_to_colour.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file walls.v
+    Info (12023): Found entity 1: walls File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/walls.v Line: 2
+Warning (10463): Verilog HDL Declaration warning at drawing.v(11): "rand" is SystemVerilog-2005 keyword File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/drawing.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file drawing.v
+    Info (12023): Found entity 1: drawing File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/drawing.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file sincos.v
+    Info (12023): Found entity 1: sincos File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/sincos.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file sincos_tb.v
+    Info (12023): Found entity 1: sincos_tb File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/sincos_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file player.v
+    Info (12023): Found entity 1: player File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/player.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file vga_driver_tb.v
+    Info (12023): Found entity 1: vga_driver_tb File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/vga_driver_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file random_gen.v
+    Info (12023): Found entity 1: random_gen File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/random_gen.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file random_gen_tb.v
+    Info (12023): Found entity 1: random_gen_tb File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/random_gen_tb.v Line: 2
+Warning (10463): Verilog HDL Declaration warning at wall_generator.v(4): "rand" is SystemVerilog-2005 keyword File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/wall_generator.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file wall_generator.v
+    Info (12023): Found entity 1: wall_generator File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/wall_generator.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file game.v
+    Info (12023): Found entity 1: game File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/game.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rotate.v
+    Info (12023): Found entity 1: rotate File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/rotate.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file counter.v
+    Info (12023): Found entity 1: counter File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/counter.v Line: 2
+Warning (10463): Verilog HDL Declaration warning at spin_controller.v(5): "rand" is SystemVerilog-2005 keyword File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/spin_controller.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file spin_controller.v
+    Info (12023): Found entity 1: spin_controller File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/spin_controller.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_counter0.v
+    Info (12023): Found entity 1: lpm_counter0 File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/lpm_counter0.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file alt_pll.v
+    Info (12023): Found entity 1: alt_pll File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/alt_pll.v Line: 39
+Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
+    Info (12022): Found design unit 1: Contador-beh File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/CONTADOR.vhd Line: 17
+    Info (12023): Found entity 1: Contador File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/CONTADOR.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file desplazaxyalcentro.vhd
+    Info (12022): Found design unit 1: DesplazaXYalCentro-beh File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/DESPLAZAXYALCENTRO.vhd Line: 16
+    Info (12023): Found entity 1: DesplazaXYalCentro File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/DESPLAZAXYALCENTRO.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file compara_coordenadas.vhd
+    Info (12022): Found design unit 1: Compara_coordenadas-beh File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/COMPARA_COORDENADAS.vhd Line: 19
+    Info (12023): Found entity 1: Compara_coordenadas File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/COMPARA_COORDENADAS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file dificultad.vhd
+    Info (12022): Found design unit 1: Dificultad-beh File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/DIFICULTAD.vhd Line: 17
+    Info (12023): Found entity 1: Dificultad File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/DIFICULTAD.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file juego_fsm.vhd
+    Info (12022): Found design unit 1: Juego_Fsm-beh File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/JUEGO_FSM.vhd Line: 22
+    Info (12023): Found entity 1: Juego_Fsm File: C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/JUEGO_FSM.vhd Line: 5
+Info (12127): Elaborating entity "JUEGO_FSM" for the top level hierarchy
+Info (144001): Generated suppressed messages file C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/output_files/SuperHexagon.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 805 megabytes
+    Info: Processing ended: Fri Jul 01 14:04:55 2016
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:35
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
+<<<<<<< HEAD
 The suppressed messages can be found in E:/Mega/Facultad/FPGA/SuperHexagonFPGA/output_files/SuperHexagon.map.smsg.
+=======
+The suppressed messages can be found in C:/Users/Daniela/Dropbox/Laura/Gabriel/Semestre 9/FPGA/Proyectos/SuperHexagonFPGA/output_files/SuperHexagon.map.smsg.
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 
 

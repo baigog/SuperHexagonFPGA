@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 |CIRCULO
 CLK => DIBUJA~reg0.CLK
 CLK => DY[0].CLK
@@ -61,5 +62,48 @@ Y2_IN[7] => Add1.IN3
 Y2_IN[8] => Add1.IN2
 Y2_IN[9] => Add1.IN1
 DIBUJA << DIBUJA~reg0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+|JUEGO_FSM
+Clk => Vuelve_jugador~reg0.CLK
+Clk => Rst~reg0.CLK
+Clk => Actualizar~reg0.CLK
+Clk => Game_over~reg0.CLK
+Clk => current_state~1.DATAIN
+Frame_inicio => PROXIMO_ESTADO.IN0
+Frame_inicio => Actualizar.DATAB
+Frame_fin => next_state.DATAA
+Frame_fin => next_state.DATAA
+Frame_fin => Selector0.IN3
+Frame_fin => Selector2.IN5
+Frame_fin => Salida.IN0
+Frame_fin => Selector1.IN2
+Frame_fin => next_state.DATAA
+Frame_fin => next_state.DATAA
+Frame_fin => Selector5.IN1
+Nuevo_juego => PROXIMO_ESTADO.IN1
+Colision_nuevo => PROXIMO_ESTADO.IN0
+Colision_nuevo => next_state.OUTPUTSELECT
+Colision_nuevo => next_state.OUTPUTSELECT
+Colision_nuevo => next_state.DATAA
+Colision_nuevo => next_state.OUTPUTSELECT
+Colision_nuevo => next_state.OUTPUTSELECT
+Colision_nuevo => Selector5.IN4
+Colision_viejo => PROXIMO_ESTADO.IN1
+Colision_viejo => next_state.DATAA
+Colision_viejo => next_state.OUTPUTSELECT
+Colision_viejo => next_state.OUTPUTSELECT
+Colision_viejo => Selector5.IN5
+Colision_viejo => Salida.IN1
+Colision_viejo => next_state.DATAA
+Reset => Vuelve_jugador~reg0.ACLR
+Reset => Rst~reg0.PRESET
+Reset => Actualizar~reg0.ACLR
+Reset => Game_over~reg0.PRESET
+Reset => current_state~3.DATAIN
+Actualizar <= Actualizar~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Rst <= Rst~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Vuelve_jugador <= Vuelve_jugador~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Game_over <= Game_over~reg0.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 
 

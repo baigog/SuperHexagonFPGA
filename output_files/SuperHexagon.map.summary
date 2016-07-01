@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 Analysis & Elaboration Status : Successful - Fri Jul 01 13:59:57 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : SuperHexagon
 Top-level Entity Name : CIRCULO
+=======
+Analysis & Elaboration Status : Successful - Fri Jul 01 14:04:55 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : SuperHexagon
+Top-level Entity Name : Juego_Fsm
+>>>>>>> e140dd7c37dc31202cdef21c4493e2c349e52183
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge
