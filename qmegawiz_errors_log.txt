@@ -1,0 +1,19 @@
+
+
+E:/Mega/Facultad/FPGA/SuperHexagonFPGA/alt_pll.v
+
+Jun 29 08AM:36:10>: Error in CNX file format.
+
+Error messages are listed in file
+E:/Mega/Facultad/FPGA/SuperHexagonFPGA/alt_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+E:/Mega/Facultad/FPGA/SuperHexagonFPGA/alt_pll.v
+
+Jun 29 08AM:36:19>: Error in CNX file format.
+
+Error messages are listed in file
+E:/Mega/Facultad/FPGA/SuperHexagonFPGA/alt_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
