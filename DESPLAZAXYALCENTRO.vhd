@@ -6,18 +6,18 @@ entity DesplazaXYalCentro is
 
 	port(
 		Clk		:	in	std_logic;
-		Xin		:	in std_logic_vector(9 downto 0);
-		Yin		:	in std_logic_vector(9 downto 0);
-		Xout		:	out std_logic_vector(9 downto 0);
-		Yout		:	out std_logic_vector(9 downto 0)
+		Xin		:	in unsigned(9 downto 0);
+		Yin		:	in unsigned(9 downto 0);
+		Xout		:	out signed(9 downto 0);
+		Yout		:	out signed(9 downto 0)
 	);
 end DesplazaXYalCentro;
 
 architecture beh of DesplazaXYalCentro is
 begin
-	Desplazar: process(Clk)
+	Desplazar: process(Clk,Xin,Yin)
 	begin
-		Xout <= std_logic_vector(unsigned(Xin) - to_unsigned(320,10));
-		Yout <= std_logic_vector(unsigned(Yin) - to_unsigned(240,10));
+		Xout <= signed(std_logic_vector(Xin)) - to_signed(320,10);
+		Yout <= signed(std_logic_vector(Yin)) - to_signed(240,10);
 	end process;
 end beh;
