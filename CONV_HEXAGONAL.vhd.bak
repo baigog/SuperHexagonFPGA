@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity conv_hexagonal is
+	port(
+		clk		: in std_logic;
+		x			: in signed (9 downto 0);
+		y			: in signed (9 downto 0);
+		
+		cuadrante	: out unsigned (2 downto 0);
+		radio			: out unsigned (9 downto 0)
+		);
+end conv_hexagonal;
+
+architecture beh of conv_hexagonal is
+
+constant raiz_de_3 : unsigned (11 downto 0) := "011011101101";
+
+signal raiz_de_3_x, raiz_de_3_x_neg		: signed (10 downto 0);
+signal raiz_de_3_x_completo				: signed (21 downto 0);
+signal y_extendido, y_neg					: signed (10 downto 0);
+
+signal radio_frac		: unsigned (11 downto 0);
+
+begin
+
+raiz_de_3_x_completo <= x[9]&x * raiz_de_3;
+raiz_de_3_x <= raiz_de_3_x_completo(21 downto 11);
+raiz_de_3_x_neg = -raiz_de_3_x;
+
+y_extendido <= y[9]&y;
+y_neg <= -y_extendido;
